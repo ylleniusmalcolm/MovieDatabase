@@ -157,29 +157,6 @@ while True:
             registry.close_connection()
             print("Exiting...")
             break
-        case 0:
-            movie1 = Movie("The Shawshank Redemption", 1994, "Frank Darabont")
-            movie1.genre = "Drama"
-            movie1.synopsis = "After a banker is sentenced to life in Shawshank Prison, he forms an unlikely friendsship with a seasoned inmate and clings to hope amid cruelty and corruption."
-            movie1.rating = 9.3
-            movie1.generate_uuid()
-
-            movie2 = Movie("The Godfather", 1972, "Francis Ford Coppola")
-            movie2.genre = "Drama"
-            movie2.synopsis = "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
-            movie2.rating = 9.2
-            movie2.generate_uuid()
-
-            movie3 = Movie("The Dark Knight", 2008, "Christopher Nolan")
-            movie3.genre = "Superhero"
-            movie3.synopsis = "When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness."
-            movie3.rating = 9.1
-            movie3.generate_uuid()
-
-            registry.insert_movie(movie1)
-            registry.insert_movie(movie2)
-            registry.insert_movie(movie3)
-            continue
 
     print("Invalid input")
         

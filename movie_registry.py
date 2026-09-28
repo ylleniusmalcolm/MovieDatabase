@@ -82,7 +82,7 @@ class MovieRegistry:
                     contains_filter = True
                 elif filter_word.lower() in movie.director.lower():
                     contains_filter = True
-                elif filter_word.isdigit() and year == filter_word:
+                elif filter_word.isdigit() and movie.year == int(filter_word):
                     contains_filter = True
 
                 if not contains_filter:
